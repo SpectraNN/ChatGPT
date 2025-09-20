@@ -1,0 +1,97 @@
+.server-form {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.server-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+.server-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.server-form input,
+.server-form textarea {
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: #f8fafc;
+}
+
+.server-form textarea {
+  resize: vertical;
+}
+
+.server-form__tags {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.server-form__tags button {
+  padding: 0.65rem 1.2rem;
+  background: linear-gradient(135deg, #22d3ee, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.server-form__taglist {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.server-form__taglist span {
+  background: rgba(59, 130, 246, 0.1);
+  color: #1d4ed8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.server-form button[type='submit'] {
+  align-self: flex-start;
+  padding: 0.85rem 2.4rem;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.server-form button[type='submit']:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 30px rgba(59, 130, 246, 0.25);
+}
+
+.server-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .server-form {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "minecraft-monitor-server",
+  "version": "1.0.0",
+  "description": "Backend service for Minecraft server monitoring portal",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint \"src/**/*.js\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "minecraft-server-util": "^5.3.0",
+    "nanoid": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^3.1.4"
+  }
+}
